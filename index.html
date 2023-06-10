@@ -7,15 +7,49 @@
     <title>E-manager - Manage And Search Your Pending Tasks In Clicks!</title>
 
     <link rel="icon" type="image/x-icon" href="./Images/favicon.ico" />
+    <link rel="stylesheet" href="/master.css">
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+
+    <header class="header">
+        <div class="container">
+            <div class="navbar">
+                <a href="/" class="logo">
+                    <img src="/images/logo.svg" alt="vivid">
+                    <span>viVid</span>
+                </a>
+                <nav>
+                    <ul class="nav-items">
+                        <li>
+                            <a href="/Quiz_App">Quiz</a>
+                        </li>
+                        <li class="active">
+                            <a href="/task_manager">Task Manager</a>
+                        </li>
+                        <li>
+                            <a href="/progress_manager">Progress Board</a>
+                        </li>
+                        <li>
+                            <a href="/budget_tracker/">Budget Manager</a>
+                        </li>
+                        <span class="newsletter">Join Newsletter</span>
+                    </ul>
+                </nav>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </div>
+    </header>
     <main>
         <div class="wrap">
-            <section class="heading">
+            <!-- <section class="heading">
                 <p class="title">E-manager</p>
                 <p class="subtitle">Manage And Search Your Pending Tasks In Clicks!</p>
-            </section>
+            </section> -->
 
             <section class="task-manager">
                 <div class="search-box">
@@ -44,7 +78,35 @@
         </div>
     </main>
 
+    <footer>
+        <div class="container">
+            <div class="footer">
+                <div class="brand-name">
+                    <span>© viVid by Oluwatobi A.D</span>
+                </div>
+                <div class="social-icons">
+                    <i class="bi bi-twitter social"></i>
+                    <i class="bi bi-linkedin social"></i>
+                    <i class="bi bi-youtube social"></i>
+                    <i class="bi bi-instagram social"></i>
+                </div>
+            </div>
+        </div>
+        <section class="modal">
+            <div class="newsletter-modal">
+                <p>Join Newsletter Now!</p>
+                <form>
+                    <input type="text" name="name" placeholder="Name" autocomplete="off">
+                    <input type="email" name="email" placeholder="Email" autocomplete="off">
+                    <input type="submit" value="Submit">
+                </form>
+                <i class="bi bi-x-lg close"></i>
+            </div>
+        </section>
+    </footer>
+
     <script src="./index.js"></script>
+    <script src="/main.js"></script>
     
 </body>
 </html>
